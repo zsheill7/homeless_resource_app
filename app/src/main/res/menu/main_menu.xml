@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context=".SelectionActivity" >
+
+    <item
+        android:id = "@+id/item_option1"
+        android:title="@string/item_option1"
+        android:onClick="sendMessageSettings"
+        />
+    <item
+        android:id = "@+id/item_option2"
+        android:title="@string/item_option2"
+        android:onClick="sendMessageAboutUs"
+        />
+    <item
+        android:id = "@+id/item_option3"
+        android:title="@string/item_option3"
+        />
+
+</menu>

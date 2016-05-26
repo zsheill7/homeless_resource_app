@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.apple.homelessapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/stringSGender"
+        android:id="@+id/textViewS4"
+        android:layout_marginTop="91dp"
+        android:layout_gravity="center"
+        android:autoLink="none"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonSN"
+        android:layout_toStartOf="@+id/buttonSN" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/stringSChildren"
+        android:id="@+id/textViewS5"
+        android:layout_below="@+id/textViewS4"
+        android:layout_alignLeft="@+id/textViewS4"
+        android:layout_alignStart="@+id/textViewS4"
+        android:layout_marginTop="55dp" />
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewS4"
+        android:layout_alignLeft="@+id/textViewS4"
+        android:layout_alignStart="@+id/textViewS4"
+        android:id="@+id/radioGroupS"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSMG"
+            android:id="@+id/radioButtonSM"
+            android:onClick="setGender"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSFG"
+            android:id="@+id/radioButtonSF"
+            android:onClick="setGender"
+            android:checked="false"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@+id/textViewS5"
+        android:layout_alignStart="@+id/textViewS5"
+        android:id="@+id/radioGroupS2"
+        android:layout_below="@+id/textViewS5"
+        android:layout_alignRight="@+id/radioGroupS"
+        android:layout_alignEnd="@+id/radioGroupS">
+
+        <RadioButton
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSYC"
+            android:id="@+id/radioButtonSY"
+            android:onClick="setChildren"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSNC"
+            android:id="@+id/radioButtonSN"
+            android:onClick="setChildren"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/stringSBirth"
+        android:id="@+id/textViewS6"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/radioGroupS2"
+        android:layout_alignLeft="@+id/radioGroupS2"
+        android:layout_alignStart="@+id/radioGroupS2" />
+
+    <!--NEXT button to open new activity-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonBack"
+        android:id="@+id/buttonSN"
+        android:onClick="sendMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewS6"
+        android:layout_alignLeft="@+id/textViewS6"
+        android:layout_alignStart="@+id/textViewS6"
+        android:layout_above="@+id/buttonSN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/radioGroupS3">
+
+        <RadioButton
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSYA"
+            android:id="@+id/radioButtonS"
+            android:onClick="setAge"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSNA"
+            android:id="@+id/radioButtonS2"
+            android:onClick="setAge"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/change_preference"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewS4"
+        android:layout_alignStart="@+id/textViewS4" />
+</RelativeLayout>
