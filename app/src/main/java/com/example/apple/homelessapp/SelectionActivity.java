@@ -70,11 +70,11 @@ public class SelectionActivity extends AppCompatActivity {
 
     }
 
-    public void installGooglePlay(Fragment fragment) {
+    /*public void installGooglePlay(Fragment fragment) {
 
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.example.apple.homelessapp")));
 
-    }
+    }*/
 
 
 
